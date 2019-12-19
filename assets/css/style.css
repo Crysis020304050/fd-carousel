@@ -36,9 +36,6 @@
     box-shadow: 0 0 16px 5px rgba(0, 0, 0, 0.75);
 }
 
-.newNextSlider {
-
-}
 
 .slide > img {
     height: inherit;
@@ -68,7 +65,15 @@
     top: 50%;
     transform: translateY(-50%) scale(0.8);
     display: block;
-
 }
 
+.newPrevSlider {
+    width: 0;
+    box-shadow: none;
+}
+
+.newNextSlider {
+    width: 0;
+    box-shadow: none;
+}
 

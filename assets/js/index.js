@@ -151,7 +151,14 @@ class CarouselController {
     prevSlide.classList.remove('prevSlide');
     currentSlide.classList.replace('currentSlide', 'prevSlide');
     nextSlide.classList.replace('nextSlide', 'currentSlide');
+
+    newNext.classList.add('newNextSlider');
     newNext.classList.add('nextSlide');
+
+    setTimeout(function () {
+      newNext.classList.remove('newNextSlider');
+    }, 100);
+
     this._carousel.goNext();
   };
 
@@ -169,8 +176,13 @@ class CarouselController {
     prevSlide.classList.replace('prevSlide', 'currentSlide');
     currentSlide.classList.replace('currentSlide', 'nextSlide');
 
-
+    newPrev.classList.add('newPrevSlider');
     newPrev.classList.add('prevSlide');
+
+    setTimeout(function () {
+      newPrev.classList.remove('newPrevSlider');
+    }, 100);
+
     this._carousel.goPrev();
   };
 
